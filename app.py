@@ -90,7 +90,7 @@ app = get_langgraph_app()
 # --- Streamlit UI Setup ---
 
 st.set_page_config(page_title="Academic QA", layout="centered")
-st.title("💬 Academic QA")
+st.title("Academia RAG 💬🤖")
 
 # Initialize session state for messages and thread ID
 if "messages" not in st.session_state:
