@@ -20,7 +20,7 @@ class Config:
 
 
     # ---Embedding Model Configuration ---
-    EMBEDDING_MODEL_NAME = "intfloat/multilingual-e5-large" # "all-MiniLM-L6-v2"
+    EMBEDDING_MODEL_NAME = "intfloat/multilingual-e5-base" # "all-MiniLM-L6-v2"
     CHUNK_SIZE = 2028
     CHUNK_OVERLAP = 250
 
