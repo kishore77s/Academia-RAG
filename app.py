@@ -30,8 +30,11 @@ if "GROQ_API_KEY" not in os.environ:
 
 # Initialize embeddings model
 def get_embeddings_model():
-    """Caches the HuggingFaceEmbeddings model."""
-    return HuggingFaceEmbeddings(model_name=config.EMBEDDING_MODEL_NAME)
+    return HuggingFaceEmbeddings(
+        model_name=config.EMBEDDING_MODEL_NAME,
+        model_kwargs={"device": "cpu"},
+        encode_kwargs={"normalize_embeddings": True}
+    )
 
 embeddings = get_embeddings_model()
 
